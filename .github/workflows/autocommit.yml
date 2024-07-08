@@ -31,15 +31,15 @@ jobs:
           git config --local user.name "mazipan"
           git add -A
           
-          arr[0]="chore(bot): 💜"
+          arr[0]="chore(ai): 💜"
           arr[1]="chore(bot): 🖤"
-          arr[2]="chore(bot): 💙"
+          arr[2]="chore(ai): 💙"
           arr[3]="chore(bot): 🩷"
-          arr[4]="chore(bot): 🧡"
+          arr[4]="chore(ai): 🧡"
           arr[5]="chore(bot): 💛"
-          arr[6]="chore(bot): 🐐"
+          arr[6]="chore(ai): 🐐"
           arr[7]="chore(bot): 🤎"
-          arr[8]="chore(bot): 🩶"
+          arr[8]="chore(ai): 🩶"
           arr[9]="chore(bot): 💣"
           
           rand=$[$RANDOM % ${#arr[@]}]
