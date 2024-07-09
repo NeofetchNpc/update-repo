@@ -1,4 +1,4 @@
-name: Auto commit
+name: LinucxMD
 
 on:
 
@@ -27,8 +27,8 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "mazipanneh@gmail.com"
-          git config --local user.name "mazipan"
+          git config --local user.email "linucxmd@gmail.com"
+          git config --local user.name "NeofetchNpc"
           git add -A
           
           arr[0]="chore(ai): 💜"
