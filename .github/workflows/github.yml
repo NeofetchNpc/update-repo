@@ -1,10 +1,9 @@
 name: LinucxMD
 
 on:
-
   push:
     branches:
-      - master
+      - m
       
   schedule:
   - cron: "0 7,9,11 * * 1,3" # See https://crontab.guru/#0_7,9,11_*_*_1,3
@@ -15,6 +14,7 @@ jobs:
     steps:
       - name: DEBUG 
         run: echo "::debug::Ref = ${{github.ref}}"
+        
       - uses: actions/checkout@v3      
         with:
          persist-credentials: false
@@ -23,7 +23,7 @@ jobs:
       - name: Modify last update
         run: |
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
-          echo $d > LAST_UPDATED By YusupKakuu
+          echo $d > LAST_UPDATED By YusupKakuu 2024
           
       - name: Commit changes
         run: |
@@ -31,16 +31,16 @@ jobs:
           git config --local user.name "NeofetchNpc"
           git add -A
           
-          arr[0]="chore(ai): 💜"
-          arr[1]="chore(bot): 🖤"
-          arr[2]="chore(ai): 💙"
-          arr[3]="chore(bot): 🩷"
-          arr[4]="chore(ai): 🧡"
-          arr[5]="chore(bot): 💛"
-          arr[6]="chore(ai): 🐐"
-          arr[7]="chore(bot): 🤎"
-          arr[8]="chore(ai): 🩶"
-          arr[9]="chore(bot): 💣"
+          arr[0]="A 💜"
+          arr[1]="B 🖤"
+          arr[2]="C 💙"
+          arr[3]="D 🩷"
+          arr[4]="F 🧡"
+          arr[5]="E 💛"
+          arr[6]="G 🐐"
+          arr[7]="H 🤎"
+          arr[8]="I 🩶"
+          arr[9]="J 💣"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
@@ -50,4 +50,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           directory: "."
-          github_token: ${{ secrets.GHB_TOKEN }}
+          github_token: ${{ secrets.HB_TOKEN }}
