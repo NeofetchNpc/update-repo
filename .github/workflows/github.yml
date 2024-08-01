@@ -24,6 +24,7 @@ jobs:
         run: |
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo $d > LAST_UPDATED By YusupKakuu 2024
+          echo $d > Dockerfile By YusupKakuu
           
       - name: Commit changes
         run: |
