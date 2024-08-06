@@ -32,16 +32,11 @@ jobs:
           git config --local user.name "NeofetchNpc"
           git add -A
           
-          arr[0]="A 💜"
-          arr[1]="B 🖤"
-          arr[2]="C 💙"
-          arr[3]="D 🩷"
-          arr[4]="F 🧡"
-          arr[5]="E 💛"
-          arr[6]="G 🐐"
-          arr[7]="H 🤎"
-          arr[8]="I 🩶"
-          arr[9]="J 💣"
+          arr[0]="💜"
+          arr[1]="🖤"
+          arr[2]="💙"
+          arr[3]="🩷"
+          arr[4]="💣"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
