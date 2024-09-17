@@ -24,6 +24,7 @@ jobs:
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo $d > LAST_UPDATED By YusupKakuu 2024
           echo $d > Dockerfile By YusupKakuu
+          echo $d > README.md By YusupKakuu
           
       - name: Commit changes
         run: |
@@ -45,4 +46,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           directory: "."
-          github_token: ${{ secrets.HB_TOKEN }}
+          github_token: ${{ secrets.HBTOKEN }}
